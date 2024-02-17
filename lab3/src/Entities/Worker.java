@@ -3,16 +3,27 @@ package Entities;
 import Enums.Gender;
 import Interfaces.Publishable;
 import Interfaces.Thinkable;
+import Place.Company;
 
 public class Worker extends Human implements Thinkable , Publishable {
-    Money quantity;
+    private Money quantity;
+    private Company company;
 
-    public Worker(String name, Money quantity, Gender sex){
-        this.name = name;
+    public Worker(String name, Money quantity, Gender sex, Company company){
+        super(name, sex);
         this.quantity = quantity;
-        this.sex = sex;
+        this.company = company;
     }
 
+    public void setCompany(Company company){
+        this.company = company;
+    }
+    public Company getCompany(){
+        return this.company;
+    }
+    public void setQuantity(Money quantity){
+        this.quantity = quantity;
+    }
     public Money getQuantity(){
         return this.quantity;
     }

@@ -1,8 +1,7 @@
 package Interfaces;
 
-import Enums.Buildings;
+import Place.Building;
 
 public interface Lostable {
-    void lost(Buildings locations, Buildings loca);
-
+    void lost(Building factory, Building manufactory);
 }

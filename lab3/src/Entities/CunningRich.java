@@ -4,11 +4,12 @@ import Enums.Gender;
 import Interfaces.Keepable;
 import Interfaces.Passable;
 import Interfaces.Thinkable;
+import Place.Company;
 
 public class CunningRich extends Rich implements Passable , Keepable , Thinkable {
 
-    public CunningRich(String name, Money quantity, Gender sex){
-        super(name,quantity,sex);
+    public CunningRich(String name, Money quantity, Gender sex, Company company){
+        super(name,quantity,sex,company);
     }
     @Override
     public void pass(Money money) {

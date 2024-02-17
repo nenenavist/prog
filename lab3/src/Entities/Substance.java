@@ -1,7 +1,7 @@
 package Entities;
 
 public abstract class Substance {
-    protected String name;
+    private String name;
 
     public Substance(){
         this.name = name;

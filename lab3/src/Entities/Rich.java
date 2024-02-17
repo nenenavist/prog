@@ -1,17 +1,27 @@
 package Entities;
 
-import Enums.Buildings;
 import Enums.Gender;
 import Interfaces.*;
+import Place.Building;
+import Place.Company;
 
 public class Rich extends Human implements Lostable , Savable , MakableMoney , Hideable , Passable {
-   Money quantity;
-
-   public Rich(String name, Money quantity, Gender sex){
-       this.name = name;
+    private Money quantity;
+    private Company company;
+   public Rich(String name, Money quantity, Gender sex, Company company){
+       super(name, sex);
        this.quantity = quantity;
-       this.sex = sex;
+       this.company = company;
    }
+    public void setCompany(Company company){
+        this.company = company;
+    }
+    public Company getCompany(){
+        return this.company;
+    }
+    public void setQuantity(Money quantity) {
+        this.quantity = quantity;
+    }
    public Money getQuantity(){
         return quantity;
     }
@@ -22,11 +32,9 @@ public class Rich extends Human implements Lostable , Savable , MakableMoney , H
    }
 
     @Override
-    public void lost(Buildings locations, Buildings local) {
-        if(locations == Buildings.FACTORY && local == Buildings.MANUFACTORY){
-            System.out.println(getName()+" потеряли" + Buildings.FACTORY + " и" + Buildings.MANUFACTORY);
-        }
-    }
+    public void lost(Building factory, Building manufactory) {
+       System.out.println(getName()+" потеряли" + factory.getName() + " и" + manufactory.getName());
+   }
 
     @Override
     public void save(Money money) {

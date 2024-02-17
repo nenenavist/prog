@@ -1,7 +1,8 @@
 package Entities;
 
-import Enums.Buildings;
 import Interfaces.Consistable;
+import Place.Building;
+import Place.Company;
 
 public class Order extends Substance implements Consistable {
     @Override
@@ -10,7 +11,10 @@ public class Order extends Substance implements Consistable {
     }
 
     @Override
-    public void build() {
-        System.out.printf("постройке " + Buildings.LARGE_THEATRE+", " + Buildings.MUSEUM+ ", " + Buildings.ART_GALLERY+ ", " + Buildings.STADIUM+ ", " + Buildings.SWIMMING_POOL+ ", " + Buildings.HOSPITAL +" и " + Buildings.STEAMBOAT );
+    public void build(Company company) {
+        for (int i = 0; i < company.getOwn().length; i++) {
+            System.out.print(", " + company.getOwn()[i].getName());
+        }
+        System.out.println("");
     }
 }

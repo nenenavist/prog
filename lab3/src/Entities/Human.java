@@ -3,17 +3,21 @@ package Entities;
 import Enums.Gender;
 
 public abstract class Human {
-    protected String name;
-    protected Gender sex;
+    private String name;
+    private Gender sex;
+    public Human(String name, Gender sex){
+        this.name = name;
+        this.sex = sex;
+    }
 
     public void setName(String name){
         this.name = name;
     }
 
-    public void setGender(Gender gender){
-        this.sex = gender;
+    public void setGender(Gender sex){
+        this.sex = sex;
     }
-    public Gender getGender(Gender gender){
+    public Gender getGender(){
         return sex;
     }
 
