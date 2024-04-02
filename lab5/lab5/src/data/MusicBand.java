@@ -28,7 +28,15 @@ public class MusicBand implements Comparable<MusicBand> {
         this.coordinates = new Coordinates(Long.parseLong(data[3]), Float.parseFloat(data[4]));
         this.creationDate = new Date();
         this.number0fParticipants = Integer.parseInt(data[5]);
-        this.genre = MusicGenre.valueOf(data[6]);
+        String typeGenre =  switch (Integer.parseInt(data[6])) {
+            case 1 -> "PROGRESSIVE_ROCK";
+            case 2 -> "HIP_HOP";
+            case 3 -> "PSYCHEDELIC_CLOUD_RAP";
+            case 4 -> "PUNK_ROCK";
+            case 5 -> "BRIT_POP";
+            default -> throw new IllegalStateException("Unexpected value: genre");
+        };
+        this.genre = MusicGenre.valueOf(typeGenre);
         this.studio = new Studio(data[7]);
     }
     public MusicBand(){

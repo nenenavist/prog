@@ -41,10 +41,8 @@ public class ExecuteScript implements BaseCommand {
                             System.out.println("This command does not exists: " + data[0]);
                         }
                     }
-                } catch (IOException e) {
-                    break;
                 } catch (Exception e) {
-                    throw new RuntimeException(e);
+                    break;
                 }
             }
         } catch (FileNotFoundException e) {
@@ -55,12 +53,12 @@ public class ExecuteScript implements BaseCommand {
         if (tokens.length >= 8) {
             String[] data = new String[8];
             data[1] = tokens[1];
-            data[2] = Integer.toString(IdGenerator.generateId());
-            data[3] = tokens[2];
-            data[4] = tokens[3];
-            data[5] = tokens[4];
-            data[6] = tokens[5];
-            data[7] = tokens[6];
+            data[2] = tokens[2];
+            data[3] = tokens[3];
+            data[4] = tokens[4];
+            data[5] = tokens[5];
+            data[6] = tokens[6];
+            data[7] = tokens[7];
             MusicBand musicBand = new MusicBand(data);
             CollectionManager.add(musicBand);
             System.out.printf("Организация %s добавлена в коллекцию. Размер коллекции: %d%n", musicBand.getName(), CollectionManager.getCollection().size());
