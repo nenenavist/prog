@@ -19,9 +19,7 @@ public class MusicBandGenerator {
         MusicBand musicBand;
         if (id == 0) {
             musicBand = new MusicBand();
-        } else {
-            musicBand = new MusicBand(id);
-        }
+        } else musicBand = new MusicBand(id);
         while (true) {
             try {
                 System.out.println("Input name (String): ");
@@ -94,7 +92,7 @@ public class MusicBandGenerator {
                     case 3 -> MusicGenre.PSYCHEDELIC_CLOUD_RAP;
                     case 4 -> MusicGenre.PUNK_ROCK;
                     case 5 -> MusicGenre.BRIT_POP;
-                    default -> null;
+                    default -> throw new IllegalStateException("Unexpected value: genre");
                 };
                 musicBand.setGenre(genre);
                 break;

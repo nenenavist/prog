@@ -18,7 +18,7 @@ public class Validator {
         }
     }
 
-    public static void inputIsFilled(String args, String data) throws IncorrectInputException{
+    public static void inputIsFilled(String args, String data) throws IncorrectInputException {
         if (args.isEmpty() || args.trim().isEmpty()) {
             throw new IncorrectInputException(data);
         }

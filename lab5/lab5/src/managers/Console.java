@@ -16,7 +16,7 @@ public class Console {
         System.out.println("Welcome to app!");
         while (scanner.hasNextLine()) {
             String command = scanner.nextLine().trim();
-            if (!command.isEmpty()){
+            if (!command.isEmpty()) {
                 try {
                     commandManager.startExecuting(command);
                 } catch (Exception e) {

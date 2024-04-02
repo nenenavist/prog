@@ -19,7 +19,7 @@ public class CommandManager {
         commandList.put("remove_by_id", new RemoveById());
         commandList.put("clear", new Clear());
         commandList.put("save", new Save());
-        commandList.put("execute_script", new ExecuteScript());
+        commandList.put("execute_script", new ExecuteScript(commandList));
         commandList.put("exit", new Exit());
         commandList.put("remove_head", new RemoveHead());
         commandList.put("history", new History());
