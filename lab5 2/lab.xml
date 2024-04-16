@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<collection>
+	<musicBands>
+		<musicBand id="26643" name="NoName" x="5" y="5.0" creationDate="Sun Apr 14 16:35:05 MSK 2024" numberOfParticipants="5" genre="PUNK_ROCK" studio="ghty"/>
+		<musicBand id="310685" name="Beatles" x="34" y="32.0" creationDate="Sun Apr 14 16:34:30 MSK 2024" numberOfParticipants="4" genre="BRIT_POP" studio="DFGRES"/>
+	</musicBands>
+</collection>

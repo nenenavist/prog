@@ -1,0 +1,6 @@
+add 213928 kitty 234 46 100 4 kittyStudio
+show
+add 3842 puppy 273 44 73 1 puppyStudio
+print_field_ascending_number_of_participants
+execute_script script1
+show

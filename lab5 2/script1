@@ -1,0 +1,4 @@
+show
+add 10122005 Umaturman 34 45 5 3 Halloween
+print_field_descending_studio
+execute_script script4
