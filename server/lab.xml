@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<collection>
+	<musicBands>
+		<musicBand id="221165" name="sasha" x="1" y="2.0" creationDate="Wed May 29 02:47:57 MSK 2024" numberOfParticipants="4" genre="BRIT_POP" studio="pipipupu"/>
+		<musicBand id="152261" name="sasha" x="1" y="2.0" creationDate="Wed May 29 02:47:57 MSK 2024" numberOfParticipants="4" genre="BRIT_POP" studio="pipipupu"/>
+		<musicBand id="145417" name="zhenek" x="21" y="32.0" creationDate="Wed May 29 02:47:57 MSK 2024" numberOfParticipants="34" genre="PUNK_ROCK" studio="zhenekGang"/>
+		<musicBand id="51843" name="4" x="4" y="4.0" creationDate="Wed May 29 02:47:57 MSK 2024" numberOfParticipants="4" genre="PUNK_ROCK" studio="4"/>
+		<musicBand id="145153" name="2" x="2" y="2.0" creationDate="Wed May 29 02:47:57 MSK 2024" numberOfParticipants="2" genre="HIP_HOP" studio="2"/>
+	</musicBands>
+</collection>
